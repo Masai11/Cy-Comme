@@ -13,12 +13,18 @@ const Wrapper = styled.div`
 `;
 
 const Logo = styled.div`
-
+  flex: 1;
 `;
 const Search = styled.div`
+  flex: 1;
   
 `;
+const Lang = styled.span`
+  font-size: 14px ;
+  cursor: pointer;
+`;
 const NavLinks = styled.div`
+  flex: 1;
   
 `;
 
@@ -27,7 +33,9 @@ const Navbar = () => {
     <Cont>
       <Wrapper>
         <Logo>Cy-Comme</Logo>
-        <Search>Search</Search>
+        <Search>
+          <Lang>EN</Lang>
+        </Search>
         <NavLinks>Register</NavLinks>
       </Wrapper>
     </Cont>
