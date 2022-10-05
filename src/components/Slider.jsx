@@ -102,7 +102,7 @@ const Slider = () => {
         </SliderArrow>
         <InfoWrapper slideIndex= {slideIndex}>
             {sliderItems.map((item) =>(
-                <Slide backgroundColor={item.backgroundColor}>
+                <Slide key={item.id} backgroundColor={item.backgroundColor}>
                 <ImgCont>
                     <Img src={item.img}/>
                 </ImgCont>
