@@ -16,12 +16,23 @@ const Logo = styled.h1`
 `;
 
 const Description = styled.p`
+    margin:20px 0px;
 `;
 
 const SocialsCont = styled.div`
+    display:flex;
 `;
 
 const SocialIcon = styled.div`
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:15px;
+    color:white;
+    background-color: #${props=>props.color};
 `;
 
 
@@ -45,9 +56,9 @@ const Footer = () => {
                 
             </Description>
             <SocialsCont>
-               <SocialIcon><Facebook/></SocialIcon> 
-               <SocialIcon><Instagram/></SocialIcon> 
-               <SocialIcon><Pinterest/></SocialIcon> 
+               <SocialIcon color="3B5999"><Facebook /></SocialIcon> 
+               <SocialIcon color='E4405F'><Instagram/></SocialIcon> 
+               <SocialIcon color='E60023'><Pinterest/></SocialIcon> 
                
             </SocialsCont>
         </FooterLeft>
