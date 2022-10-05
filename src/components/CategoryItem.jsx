@@ -30,6 +30,7 @@ const CardInfo = styled.div`
 const Header = styled.h1`
   color:white;
   margin-bottom:20px;
+  font-weight:bold;
 
 `;
 
