@@ -1,45 +1,30 @@
+import React from "react";
 import Home from "./pages/Home";
+
+
 import ProductList from "./pages/ProductList";
 
 import Cart from "./pages/Cart";
 
 import SingleProduct from "./pages/SingleProduct";
 // import Navbar from "./components/Navbar";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 
 function App() {
-  let component
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home/>
-      
-      break;
-    case "/ProductList":
-      component = <ProductList/>
-        
-      break;
-
-    case "/SingleProduct":
-      component = <SingleProduct/>
-
-      break;
-
-    case "/Cart":
-      component = <Cart/>
-
-      break;
-    default:
-      break;
-  }
+  
   return (
-      <>
-      {/* <Navbar/> */}
-      
-      {component}
-      </>
-      
-      // <ProductList/>
-      // <SingleProduct/>
+    
+    <Router>
+    {/* <Navbar /> */}
+    <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/product-list' element={<ProductList/>} />
+        <Route path='/single-product' element={<SingleProduct/>} />
+        <Route path='/cart' element={<Cart/>} />
+        
+    </Routes>
+    </Router>
       
     
   );
