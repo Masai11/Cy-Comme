@@ -1,7 +1,11 @@
 # Welcome to Cy-Comme
 This is an e-commerce website for a fashion company 05/10/2022
 
+<<<<<<< HEAD
 By Roy Masai
+=======
+By Roy KIplagat
+>>>>>>> d65a1cfbcb52b8597aa3cdb001e2dbf9ce7d7419
 
 ## **Table of Contents**
 [Description](#description)
