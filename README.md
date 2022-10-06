@@ -1,7 +1,7 @@
 # Welcome to Cy-Comme
 This is an e-commerce website for a fashion company 05/10/2022
 
-By Kevin Kipkoech
+By Roy KIplagat
 
 ## **Table of Contents**
 [Description](#description)
