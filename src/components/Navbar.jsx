@@ -74,9 +74,11 @@ const Navbar = () => {
           <Links ><a href ="/ProductList" style={{color:"black",textStyle:"none"}}>PRODUCTS</a></Links>
           <Links ><a href ="/SingleProduct"  style={{color:"black",textStyle:"none"}}>VIEW-ITEM</a></Links>
           <Links >
-            <a href='/Cart' style={{color:"black",textStyle:"none"}}><Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined/>
-            </Badge></a>
+            <a href='/Cart' style={{color:"black",    textStyle:"none"}}>
+              <Badge badgeContent={4} color="primary">
+                <ShoppingCartOutlined/>
+              </Badge>
+            </a>
           </Links>
         </NavLinks>
       </Wrapper>
