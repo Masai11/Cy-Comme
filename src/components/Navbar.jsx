@@ -54,13 +54,15 @@ const NavLinks = styled.div`
 const Links = styled.div`
 font-size : 20px;
 cursor :pointer;
+text-style : none;
 `;
+
 
 const Navbar = () => {
   return (
     <Cont>
       <Wrapper>
-        <LogoSec><Logo>Cy-Comme.</Logo></LogoSec>
+        <LogoSec ><Logo ><a href ="/" style={{color:"black",textStyle:"none"}}>Cy-Comme.</a> </Logo></LogoSec>
         <SearchBar>
           <Lang>EN</Lang>
           <SearchCont>
@@ -69,12 +71,12 @@ const Navbar = () => {
           </SearchCont>
         </SearchBar>
         <NavLinks>
-          <Links>REGISTER</Links>
-          <Links>SIGN-IN</Links>
-          <Links>
-            <Badge badgeContent={4} color="primary">
+          <Links ><a href ="/ProductList" style={{color:"black",textStyle:"none"}}>PRODUCTS</a></Links>
+          <Links ><a href ="/SingleProduct"  style={{color:"black",textStyle:"none"}}>VIEW-ITEM</a></Links>
+          <Links >
+            <a href='/Cart' style={{color:"black",textStyle:"none"}}><Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined/>
-            </Badge>
+            </Badge></a>
           </Links>
         </NavLinks>
       </Wrapper>
