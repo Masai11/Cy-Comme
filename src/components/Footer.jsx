@@ -1,9 +1,10 @@
-import { Facebook, Instagram, Pinterest } from '@material-ui/icons';
+import { Facebook, Instagram, Mail, Phone, Pinterest, Room } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 
 const Cont = styled.div`
     display:flex;
+    height:30vh;
 `;
 const FooterLeft = styled.div`
     display:flex;
@@ -37,12 +38,37 @@ const SocialIcon = styled.div`
 
 
 const FooterMid = styled.div`
- flex: 1;
+    padding:20px;
+    flex: 1;
+`;
+
+const Header = styled.h3`
+    margin-bottom:30px;
+`;
+
+const MidList = styled.ul`
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+`;
+
+const ListItem = styled.li`
+    width:50%;
+    margin-bottom:10px;
+
 `;
 
 
 const FooterRight = styled.div`
-flex: 1;
+    padding:20px;
+    flex: 1;
+`;
+const ContactItem = styled.div`
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
 `;
 
 
@@ -62,8 +88,30 @@ const Footer = () => {
                
             </SocialsCont>
         </FooterLeft>
-        <FooterMid></FooterMid>
-        <FooterRight></FooterRight>
+        <FooterMid>
+            <Header>Important Links</Header>
+            <MidList>
+                <ListItem>Home</ListItem>
+                <ListItem>Cart</ListItem>
+                <ListItem>Woman Fashion</ListItem>
+                <ListItem>Accessories</ListItem>
+                <ListItem>Wishlist</ListItem>
+                <ListItem>Terms</ListItem>
+            </MidList>
+        </FooterMid>
+        <FooterRight>
+            <Header>Contact</Header>
+            <ContactItem>
+               <Room style={{marginRight:"10px"}}/> Mirema Drive, Whitehouse
+            </ContactItem>
+            <ContactItem>
+                <Phone style={{marginRight:"10px"}}/> +254 728 300 345
+            </ContactItem>
+            <ContactItem>
+                <Mail style={{marginRight:"10px"}}/> roymasai001@gmail.com
+            </ContactItem>
+
+        </FooterRight>
     </Cont>
   )
 }
